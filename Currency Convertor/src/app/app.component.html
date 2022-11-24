@@ -1,0 +1,22 @@
+<div style="text-align:center">
+  <p>From:</p>
+  <select #country (change)="con1(country.value)">
+          <option value=""selected disabled hidden>Choose Country Here..</option>
+          <option value="IN">INDIA</option>
+          <option value="US">AMERICA</option>
+          <option value="AUS">AUSTRALIA</option>
+  </select>
+  <p>To:</p>
+  <select #to (change)="con2(to.value)">
+          <option value=""selected disabled hidden>Choose Country Here..</option>
+          <option value="IN">INDIA</option>
+          <option value="US">AMERICA</option>
+          <option value="AUS">AUSTRALIA</option>
+  </select>
+  <br>
+  <br>
+       
+  <input type="text" placeholder="Enter Amount here.." #bx1 ><br><br>
+  <button (click)="convert(+bx1.value)">Convert</button>
+  <h3>OUTPUT: {{result}}</h3>
+</div>
